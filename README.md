@@ -6,3 +6,4 @@ _Note: this is not a fork, it's just starting from a copy/paste of the above pro
 ## my notes from [Effective Neovim: Instant IDE](https://www.youtube.com/watch?v=stqUbv-5u2s)
 - `<space>sf` to _fuzzy_ search files
 - `:Telescope keymaps` to search for keymappings and see their definitions
+- `:Mason` to pick from all the available language servers
