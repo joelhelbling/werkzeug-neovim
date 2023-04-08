@@ -6,14 +6,22 @@
 vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 
 return {
-  { "kylechui/nvim-surround", opts = {} },
+  { 'kylechui/nvim-surround', opts = {} },
+  { 'rmagatti/auto-session',
+    opts = {
+      log_level = 'error',
+      auto_session_suppress_dirs = {
+        '~/', '~/code', '~/Downloads', '/'
+      }
+    }
+  },
   {
-    "nvim-neo-tree/neo-tree.nvim",
+    'nvim-neo-tree/neo-tree.nvim',
     dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
+      'nvim-lua/plenary.nvim',
+      'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
+      'MunifTanjim/nui.nvim',
     },
-    version = "v2.x",
+    version = 'v2.x',
   },
 }

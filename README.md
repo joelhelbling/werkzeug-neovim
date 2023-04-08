@@ -17,6 +17,7 @@ _Note: this is not a fork, it's just starting from a copy/paste of the above pro
 - [x] new panes should open on the right!
 - [x] move to next pane with `<C-h>`, `<C-l>`
 - [x] install vim-surround
+- [x] install plugin to manage sessions (chose 'rmagatti/auto-session')
 
 ## original leading comment from stock `init.lua`
 
