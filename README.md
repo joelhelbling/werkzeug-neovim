@@ -13,9 +13,9 @@ _Note: this is not a fork, it's just starting from a copy/paste of the above pro
 - [x] move between tabs with `tn` and `tp` (yeah, I know, don't judge me for my muscle memory)
 - [x] change "Search" to "Find", e.g. `<leader>sf` should be `<leader>ff` --"find files" instead of "search files"
 - [x] some sort of file tree should open on `<leader>n`
-- [ ] not familiar with `vim-sleuth`, and I think I'd rather just default to two spaces
-- [ ] new panes should open on the right!
-- [ ] move to next pane with `<C-h>`, `<C-l>`
+- [x] not familiar with `vim-sleuth`, and I think I'd rather just default to two spaces
+- [x] new panes should open on the right!
+- [x] move to next pane with `<C-h>`, `<C-l>`
 - [ ] install vim-surround
 
 ## original leading comment from stock `init.lua`
