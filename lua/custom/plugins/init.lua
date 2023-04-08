@@ -24,4 +24,6 @@ return {
     },
     version = 'v2.x',
   },
+  'tpope/vim-endwise',
+  'dag/vim-fish',
 }

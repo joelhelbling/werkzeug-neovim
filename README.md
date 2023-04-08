@@ -19,6 +19,8 @@ _Note: this is not a fork, it's just starting from a copy/paste of the above pro
 - [x] install vim-surround
 - [x] install plugin to manage sessions (chose 'rmagatti/auto-session')
 - [x] I can't seem to shake `ctrl-p` when I want to open a file.  Couldn't we just map that to the same as `<leader>ff`?
+- [x] add tpope's endwise plugin
+- [x] add syntax support for fish shell
 
 ## learning goals
 - learn more about Mason
