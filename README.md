@@ -8,6 +8,16 @@ _Note: this is not a fork, it's just starting from a copy/paste of the above pro
 - `:Telescope keymaps` to search for keymappings and see their definitions
 - `:Mason` to pick from all the available language servers
 
+## current issues/todos:
+- [x] `kj` should escape from `i` and `v` modes
+- [x] move between tabs with `tn` and `tp` (yeah, I know, don't judge me for my muscle memory)
+- [x] change "Search" to "Find", e.g. `<leader>sf` should be `<leader>ff` --"find files" instead of "search files"
+- [ ] some sort of file tree should open on `<leader>n`
+- [ ] not familiar with `vim-sleuth`, and I think I'd rather just default to two spaces
+- [ ] new panes should open on the right!
+
+## original leading comment from stock `init.lua`
+
 This was at the beginning of the copy/pasted `init.lua`.  I want to slim that file down a bit, but don't want to lose those comments (at least for now).
 
 ```lua
