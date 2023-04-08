@@ -19,6 +19,11 @@ _Note: this is not a fork, it's just starting from a copy/paste of the above pro
 - [x] install vim-surround
 - [x] install plugin to manage sessions (chose 'rmagatti/auto-session')
 
+## learning goals
+- learn more about Mason
+- learn more about Telescope
+- learn more about language servers
+
 ## original leading comment from stock `init.lua`
 
 This was at the beginning of the copy/pasted `init.lua`.  I want to slim that file down a bit, but don't want to lose those comments (at least for now).
