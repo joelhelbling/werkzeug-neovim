@@ -6,6 +6,7 @@
 vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 
 return {
+  { "kylechui/nvim-surround", opts = {} },
   {
     "nvim-neo-tree/neo-tree.nvim",
     dependencies = {

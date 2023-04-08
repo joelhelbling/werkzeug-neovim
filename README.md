@@ -16,7 +16,7 @@ _Note: this is not a fork, it's just starting from a copy/paste of the above pro
 - [x] not familiar with `vim-sleuth`, and I think I'd rather just default to two spaces
 - [x] new panes should open on the right!
 - [x] move to next pane with `<C-h>`, `<C-l>`
-- [ ] install vim-surround
+- [x] install vim-surround
 
 ## original leading comment from stock `init.lua`
 
