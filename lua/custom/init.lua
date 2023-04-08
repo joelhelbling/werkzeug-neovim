@@ -8,6 +8,9 @@ vim.keymap.set({ 'n', 'v' }, 'tp', ':tabprevious<CR>', { noremap = true, silent 
 -- show file tree
 vim.keymap.set({ 'n', 'v' }, '<leader>n', ':Neotree toggle<CR>', { desc = "NeoTree", silent = true })
 
+-- get me some files
+vim.keymap.set('n', '<C-p>', require('telescope.builtin').find_files, { desc = '[F]ind [F]iles' })
+
 -- pane movement
 vim.keymap.set('n', '<C-h>', '<C-w>h', {noremap = true, silent = false})
 vim.keymap.set('n', '<C-j>', '<C-w>j', {noremap = true, silent = false})

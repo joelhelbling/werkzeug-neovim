@@ -18,6 +18,7 @@ _Note: this is not a fork, it's just starting from a copy/paste of the above pro
 - [x] move to next pane with `<C-h>`, `<C-l>`
 - [x] install vim-surround
 - [x] install plugin to manage sessions (chose 'rmagatti/auto-session')
+- [x] I can't seem to shake `ctrl-p` when I want to open a file.  Couldn't we just map that to the same as `<leader>ff`?
 
 ## learning goals
 - learn more about Mason
