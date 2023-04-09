@@ -67,6 +67,10 @@ vim.cmd[[highlight CopilotSuggestion guifg=#67C6F6 gui=italic ctermfg=lightblue 
   --   ["python"] = true,
   -- }
 
+-- Add borders for :LspInfo
+require('lspconfig.ui.windows').default_options = {
+  border = 'rounded'
+}
 -- Edit this file
 -- -- TODO: make this toggle custom config!
 vim.keymap.set('n', '<leader>,', ':vs ~/.config/nvim/lua/custom/init.lua<CR>',
