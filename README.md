@@ -21,6 +21,7 @@ _Note: this is not a fork, it's just starting from a copy/paste of the above pro
 - [x] I can't seem to shake `ctrl-p` when I want to open a file.  Couldn't we just map that to the same as `<leader>ff`?
 - [x] add tpope's endwise plugin
 - [x] add syntax support for fish shell
+- [x] add markdown plugin --auto bullets, conceal **bold** and _italic_ markup and `<c-k>` in visual mode makes a link!
 
 ## learning goals
 - learn more about Mason

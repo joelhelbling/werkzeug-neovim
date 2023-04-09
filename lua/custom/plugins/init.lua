@@ -26,4 +26,5 @@ return {
   },
   'tpope/vim-endwise',
   'dag/vim-fish',
+  'ixru/nvim-markdown',
 }
