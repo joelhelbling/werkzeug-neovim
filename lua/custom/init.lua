@@ -20,6 +20,7 @@ vim.keymap.set('n', '<C-l>', '<C-w>l', {noremap = true, silent = false})
 -- new panes split to the right and below
 vim.opt.splitbelow = true -- Open new split below
 vim.opt.splitright = true -- Open new split to the right
+vim.keymap.set({'n', 'v'}, '<leader>=', '<C-w>=', { desc='[=] Equalize Panes', noremap = true, silent = false })
 
 -- indention
 local indent = 2
@@ -34,5 +35,41 @@ vim.opt.tabstop = indent
 vim.api.nvim_create_user_command('Thtml', ':%!tidy -q -i -html', {})
 vim.api.nvim_create_user_command('Txml',  ':%!tidy -q -i -xml', {})
 vim.api.nvim_create_user_command('Tjson', ':%!jq -M --indent 2 .', {})
+
+-- Copilot config
+-- -- Copilot keymaps
+vim.g.copilot_no_tab_map = true
+vim.keymap.set('i', 'kk', 'copilot#Accept("")', { expr = true, silent = true })
+vim.keymap.set('i', 'kn', 'copilot#Next()', { expr = true, silent = true })
+vim.keymap.set('i', 'kp', 'copilot#Previous()', { expr = true, silent = true })
+vim.keymap.set('i', 'kd', 'copilot#Dismiss()', { expr = true, silent = true })
+vim.keymap.set('i', '<C-s>', 'copilot#Suggest()', { expr = true, silent = true })
+vim.keymap.set("n", "<leader>ps", ':Copilot status<CR>', { desc = "Co[p]ilot [s]tatus", silent = true })
+vim.keymap.set("n", "<leader>pd", ':Copilot disable<CR>', { desc = "Co[p]ilot [d]isable" })
+vim.keymap.set("n", "<leader>pe", ':Copilot enable<CR>', { desc = "Co[p]ilot [e]nable" })
+vim.keymap.set("n", "<leader>pv", ':Copilot version<CR>', { desc = "Co[p]ilot [v]ersion" })
+vim.keymap.set("n", "<leader>pp", ':Copilot panel<CR>', { desc = "Co[p]ilot [p]panel" })
+
+-- -- Copilot colors
+vim.cmd[[highlight CopilotSuggestion guifg=#67C6F6 gui=italic ctermfg=lightblue cterm=italic]]
+
+-- -- Copilot filetypes
+  -- vim.g.copilot_filetypes = {
+  --   ["*"] = false,
+  --   ["javascript"] = true,
+  --   ["typescript"] = true,
+  --   ["lua"] = false,
+  --   ["rust"] = true,
+  --   ["c"] = true,
+  --   ["c#"] = true,
+  --   ["c++"] = true,
+  --   ["go"] = true,
+  --   ["python"] = true,
+  -- }
+
+-- Edit this file
+-- -- TODO: make this toggle custom config!
+vim.keymap.set('n', '<leader>,', ':vs ~/.config/nvim/lua/custom/init.lua<CR>',
+  { desc = '[,] Edit Nvim custom config', silent = true })
 
 return {}
