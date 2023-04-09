@@ -78,7 +78,25 @@ require('lazy').setup({
     'navarasu/onedark.nvim',
     priority = 1000,
     config = function()
+      require('onedark').setup({
+        style = 'deep', -- dark, darker, cool, deep, warm, warmer or light
+        transparent = false,
+        toggle_style_key = '<leader>ts',
+        code_style = {
+          comments = 'bold',
+          keywords = 'italic',
+          functions = 'none',
+          strings = 'none',
+          variables = 'italic'
+        },
+        diagnostics = {
+          darker = true, -- darker colors for diagnostic
+          undercurl = true,   -- use undercurl instead of underline for diagnostics
+          background = true,    -- use background color for virtual text
+        },
+      })
       vim.cmd.colorscheme 'onedark'
+      -- require('onedark').load()
     end,
   },
 
