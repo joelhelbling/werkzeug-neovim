@@ -81,7 +81,7 @@ require('lazy').setup({
       require('onedark').setup({
         style = 'deep', -- dark, darker, cool, deep, warm, warmer or light
         transparent = false,
-        toggle_style_key = '<leader>ts',
+        toggle_style_key = '<leader>st',
         code_style = {
           comments = 'bold',
           keywords = 'italic',

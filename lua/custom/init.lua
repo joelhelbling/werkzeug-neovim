@@ -1,3 +1,9 @@
+-- review keymaps
+vim.keymap.set({ 'n', 'v' }, '<leader>fk', ':Telescope keymaps<CR>', { desc = '[F]ind [K]eymaps', silent = true })
+
+-- telescope
+vim.keymap.set({ 'n', 'v' }, '<leader>fc', ':Telescope colorscheme<CR>', { desc = '[F]ind [C]olorscheme', silent = true })
+
 -- remap escape
 vim.keymap.set({ 'i', 'v' }, 'kj', '<Esc>', { noremap = true, silent = true })
 
