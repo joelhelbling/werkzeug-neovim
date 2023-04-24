@@ -1,10 +1,10 @@
 ---
 tasks:
 - source: .
-  target_location: ~/.config/nvim
+  target: ~/.config/nvim
   operation: link
   preserve_original: true
-- source: ./scripts/update_bashrc
-  target_location: ~/.bashrc
-  operation: script
-  preserve_original: false
+# - source: ./scripts/update_bashrc
+#   target: ~/.bashrc
+#   operation: script
+#   preserve_original: false
