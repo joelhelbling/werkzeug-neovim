@@ -107,8 +107,48 @@ require('lazy').setup({
       options = {
         icons_enabled = true,
         theme = 'onedark',
-        component_separators = '|',
+        component_separators = '',
         section_separators = '',
+      },
+      sections = {
+        lualine_a = { 'mode' },
+        lualine_b = { 'branch', 'diff' },
+        lualine_c = {
+          {
+            'filename',
+            file_status = true,
+            path = 1,
+          }
+        },
+        lualine_x = {
+          'searchcount',
+          'encoding',
+          {
+            'fileformat',
+            symbols = {
+              unix = '',
+              dos = '',
+              mac = '',
+            }
+          },
+          'filetype'
+        },
+        lualine_y = { 'progress' },
+        lualine_z = { 'location' },
+      },
+      inactive_sections = {
+        lualine_a = {},
+        lualine_b = {},
+        lualine_c = {
+          {
+            'filename',
+            file_status = true,
+            path = 1,
+          }
+        },
+        lualine_x = { 'progress' },
+        lualine_y = { 'location' },
+        lualine_z = {},
       },
     },
   },
