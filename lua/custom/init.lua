@@ -37,6 +37,8 @@ vim.opt.smartindent = true
 vim.opt.softtabstop = indent
 vim.opt.tabstop = indent
 
+vim.keymap.set('n', '<leader>h', ':noh<CR>', { desc = '[H]ide search highlight', silent = true })
+
 -- Beautify HTML, XML, JSON
 vim.api.nvim_create_user_command('Thtml', ':%!tidy -q -i -html', {})
 vim.api.nvim_create_user_command('Txml',  ':%!tidy -q -i -xml', {})
