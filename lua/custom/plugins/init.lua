@@ -24,9 +24,20 @@ return {
     },
     version = 'v2.x',
   },
+  {
+    "supermaven-inc/supermaven-nvim",
+    config = function()
+      require("supermaven-nvim").setup({
+        color = {
+          suggestion_color = "#67C6F6",
+          cterm = 244,
+        }
+      })
+    end,
+  },
   'tpope/vim-endwise',
   'dag/vim-fish',
   'ixru/nvim-markdown',
-  'github/copilot.vim',
+  -- 'github/copilot.vim',
   'joshuavial/aider.nvim'
 }

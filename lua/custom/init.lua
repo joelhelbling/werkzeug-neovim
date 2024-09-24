@@ -64,15 +64,17 @@ vim.api.nvim_create_user_command('Tjson', ':%!jq -M --indent 2 .', {})
 -- -- Copilot filetypes
   -- vim.g.copilot_filetypes = {
   --   ["*"] = false,
-  --   ["javascript"] = true,
-  --   ["typescript"] = true,
-  --   ["lua"] = false,
-  --   ["rust"] = true,
-  --   ["c"] = true,
-  --   ["c#"] = true,
-  --   ["c++"] = true,
-  --   ["go"] = true,
-  --   ["python"] = true,
+  --   -- ["javascript"] = true,
+  -- --   ["typescript"] = true,
+  -- --   ["lua"] = false,
+  -- --   ["rust"] = true,
+  --   -- ["ruby"] = true,
+  -- --   ["c"] = true,
+  -- --   ["c#"] = true,
+  -- --   ["c++"] = true,
+  --   -- ["crystal"] = true,
+  -- --   ["go"] = true,
+  -- --   ["python"] = true,
   -- }
 
 -- Add borders for :LspInfo
