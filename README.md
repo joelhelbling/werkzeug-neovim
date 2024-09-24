@@ -22,7 +22,7 @@ _Note: this is not a fork, it's just starting from a copy/paste of the above pro
 - [x] add tpope's endwise plugin
 - [x] add syntax support for fish shell
 - [x] add markdown plugin --auto bullets, conceal **bold** and _italic_ markup and `<c-k>` in visual mode makes a link!
-- [x] install Github Copilot
+- [x] install ~~Github Copilot~~ Supermaven
 - [ ] add <leader>g* shortcuts to make Git quick and easy, including jumping though change sets, adding them, committing them, and doing interactive rebases
 
 ## learning goals
