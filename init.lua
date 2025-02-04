@@ -438,6 +438,18 @@ local servers = {
   -- rust_analyzer = {},
   -- tsserver = {},
 
+  -- Add standardrb LSP configuration
+  standardrb = {}, -- Use standard-rb for Ruby linting
+  
+  solargraph = {
+    settings = {
+      solargraph = {
+        diagnostics = false,  -- Disable solargraph diagnostics to avoid conflicts
+        formatting = false    -- Disable solargraph formatting
+      }
+    }
+  },
+
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
