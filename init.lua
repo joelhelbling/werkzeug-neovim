@@ -439,8 +439,8 @@ local servers = {
   -- tsserver = {},
 
   -- Add standardrb LSP configuration
-  standardrb = {}, -- Use standard-rb for Ruby linting
-  
+  -- standardrb = {}, -- Use standard-rb for Ruby linting
+
   solargraph = {
     settings = {
       solargraph = {
