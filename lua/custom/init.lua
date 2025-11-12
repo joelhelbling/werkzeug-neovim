@@ -51,6 +51,17 @@ vim.api.nvim_create_user_command('Thtml', ':%!tidy -q -i -html', {})
 vim.api.nvim_create_user_command('Txml',  ':%!tidy -q -i -xml', {})
 vim.api.nvim_create_user_command('Tjson', ':%!jq -M --indent 2 .', {})
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'markdown',
+  callback = function()
+    vim.keymap.set('i', '<leader>a', function()  -- or <C-y>, <C-e>, etc.
+      if require('supermaven-nvim.completion_preview').has_suggestion() then
+        require('supermaven-nvim.completion_preview').on_accept_suggestion()
+      end
+    end, { buffer = true })
+  end
+})
+
 -- Copilot config
 -- -- Copilot keymaps
 -- vim.g.copilot_no_tab_map = true
