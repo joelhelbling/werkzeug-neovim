@@ -35,6 +35,28 @@ return {
       })
     end,
   },
+  {
+    "folke/snacks.nvim",
+    priority = 1000,
+    lazy = false
+  },
+  {
+    "coder/claudecode.nvim",
+    config = true,
+    keys = {
+      { "<leader>c", nil, desc = "AI/Claude Code" },
+      { "<leader>cc", "<cmd>ClaudeCode<cr>", desc = "Toggle Claude" },
+      { "<leader>cr", "<cmd>ClaudeCode --resume<cr>", desc = "Resume Claude" },
+      { "<leader>cC", "<cmd>ClaudeCode --continue<cr>", desc = "Continue Claude" },
+      { "<leader>cs", "<cmd>ClaudeCodeSend<cr>", mode = "v", desc = "Send to Claude" },
+      {
+        "<leader>zz",
+        "<cmd>ClaudeCodeTreeAdd<cr>",
+        desc = "Add file",
+        ft = { "NvimTree", "neo-tree" },
+      },
+    },
+  },
   'tpope/vim-endwise',
   'dag/vim-fish',
   'ixru/nvim-markdown',
